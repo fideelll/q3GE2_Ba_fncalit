@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exer#4</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+//get the values
+    var a = prompt("Input your first side:");
+    var b = prompt("Input your second side:");
+    var c = prompt("Input your third side:");
+
+    
+function determinetriangle(a,b,c){
+       //determine triangle type
+    //var i is used to make things easier for me 
+        var i=0;
+      if(a==b){
+        i=i+1
+      }
+   
+    if(a==c){
+        i=i+1
+        
+      }
+    
+    if(b==c){
+        i=i+1
+    }
+
+    //determine the triangle
+    if (i==0){
+        window.alert("The triangle is SCALENE")
+    }
+    else if (i==1){
+        window.alert("The triangle is ISOSCELES")
+    }
+    else{
+        window.alert("The triangle is EQUILATERAL")
+    }}
+
+
+if(isNaN(a)||isNaN(b)||isNaN(c)){
+     window.alert("Enter numbers only.");
+
+
+}
+
+else{
+
+determinetriangle(a,b,c)
+
+}
+
+
+    </script>
+
+
+
+
+</body>
+</html>
